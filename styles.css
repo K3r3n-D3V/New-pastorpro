@@ -1,0 +1,156 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    height: 100vh;
+    width: 100%;
+}
+
+#nav{
+    height: 45px;
+    width: 100%;
+    background-color: #000;
+    /* border: 1px solid #fff; */
+    display: flex;
+  /* justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333; */
+  color: white;
+}
+
+  .menu-icon {
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+    /* border: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+    /* margin: auto; */
+  }
+  
+      /* Side Navbar */
+      .side-nav {
+        height: 100%;
+        width: 0; /* Hidden by default */
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        overflow-x: hidden;
+        transition: width 0.3s ease;
+        z-index: 1000;
+        /* padding-top: 20px; */
+      }
+  
+      .side-nav a {
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #444444;
+        display: block;
+        transition: background-color 0.3s ease;
+      }
+  
+      .side-nav a:hover {
+        background-color: #ccc;
+      }
+  
+      /* .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 24px;
+        cursor: pointer;
+        color: white;
+      } */
+
+      .small-icon {
+        width: 16px;
+        height: 16px;
+        color: #444;
+      }
+ 
+
+#box{
+    height: 100px;
+    width: 100%;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task{
+    /* border: 1px solid #000; */
+    height: 98%;
+    width: 25%;
+    border-radius: 20px;
+    margin: 0 3px;
+    /* text-align: center; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.task button{
+    height: 96%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: none;
+    font-size: 10px;
+    background-color: #fff;
+}
+
+.task button:hover{
+    cursor: pointer;
+}
+
+.green button{
+    color: #8CC304;
+    border: 1px solid #8CC304;
+}
+
+.red button{
+    color: #CF3728;
+    border: 1px solid #CF3728;
+}
+
+.blue button{
+    color: #049CC3;
+    border: 1px solid #049CC3;
+}
+
+.events{
+    border: 1px solid #000;
+    width: 100%;
+    height: 80vh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.events img{
+    width: 100%;
+    height: 100%;
+
+  
+}
+
+.popup{
+  background-color: #CF3728;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  z-index: 100;
+}
+
+
