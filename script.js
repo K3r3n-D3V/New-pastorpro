@@ -20,6 +20,23 @@
    }
  });
 
+ //this is for the 3 dotted menu next to initials
+ const menuButton = document.querySelector('.menu-button');
+const menuPopup = document.querySelector('.menu-popup');
+
+menuButton.addEventListener('click', () => {
+  // Toggle the display of the popup
+  menuPopup.style.display = menuPopup.style.display === 'block' ? 'none' : 'block';
+});
+
+// Close the popup when clicking outside
+document.addEventListener('click', (event) => {
+  if (!menuButton.contains(event.target) && !menuPopup.contains(event.target)) {
+    menuPopup.style.display = 'none';
+  }
+});
+
+
 
  //popup
  // Get all clickable divs and close buttons
