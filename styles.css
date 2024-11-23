@@ -64,15 +64,16 @@ justify-content: start;
 
   .login{
     /* border: 1px solid #fff; */
-    width: 50%;
+    width: 80%;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
   }
 
+  
   .log{
-    width: 5%;
+    width: 3%;
     height: 35%;
     /* border: 1px solid #fff; */
   }
@@ -84,12 +85,34 @@ justify-content: start;
 
   .log svg:hover{
     cursor: pointer;
-    color: #fff;
+    fill: #fff;
   }
 
+  /* This is to style the window popup */
+  .window-popup {
+  position: absolute;
+  border: 1px solid #000;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  /* padding: 20px; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  z-index: 1000; 
+  display: none; 
+  color: #000;
+}
+
+.window-nav{
+  border: 1px solid #000;
+  width: 80%;
+  height: 100%;
+  padding: 20px;
+}
   .profile{
     /* border: 1px solid #fff; */
-    width: 30%;
+    width: 20%;
     height: 100%;
     display: flex;
     /* align-items: center; */
@@ -98,7 +121,7 @@ justify-content: start;
   .profile-content{
     /* border: 1px solid #fff; */
     height: 100%;
-    width: 90%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -119,6 +142,7 @@ justify-content: start;
     color: #000;
     font-family: Arial, Helvetica, sans-serif;
   }
+
 .pro:hover{
   cursor: pointer;
 }
@@ -186,7 +210,7 @@ justify-content: start;
       /* Side Navbar */
       .side-nav {
         height: 100%;
-        width: 0; /* Hidden by default */
+        width: 17%; 
         position: fixed;
         top: 0;
         left: 0;
@@ -198,15 +222,39 @@ justify-content: start;
       }
   
       .side-nav a {
-        padding: 10px 20px;
+        padding: 10px 10px;
         text-decoration: none;
         color: #444444;
         display: block;
         transition: background-color 0.3s ease;
+      font-family: "myriad-pro regular", sans-serif;
+      font-size: 15px;
+      /* border: 1px solid #000; */
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      /* padding: 0 8px; */
+
       }
   
       .side-nav a:hover {
-        background-color: #ccc;
+        background-color: #F0F0F0;
+        /* color: #049CC3; */
+      }
+
+      /* this is for svg of 3c teams */
+      .home{
+        fill: white; 
+        stroke: black; 
+        stroke-width: 35; 
+      }
+
+      .side-nav svg{
+        height: 40%;
+        width: 8%;
+        /* border: 1px solid #000; */
+        padding-right: 20px;
+        
       }
   
       /* .close-btn {
@@ -222,6 +270,10 @@ justify-content: start;
         width: 16px;
         height: 16px;
         color: #444;
+      }
+
+      .body{
+        margin: 2px 4px;
       }
  
 
@@ -302,7 +354,7 @@ justify-content: start;
 .events{
     /* border: 1px solid #000; */
     width: 100%;
-    height: 80vh;
+    height: 50vh;
     background-color: #fff;
     display: flex;
     align-items: center;
@@ -329,8 +381,6 @@ justify-content: start;
 }
 
 
-
-
 /* Hidden popup initially */
 .popup {
   display: none;
@@ -341,25 +391,66 @@ justify-content: start;
   background: white;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
   z-index: 1000;
-  border: 1px solid green;
-  width: 60%;
-  height: 97vh;
+  /* border: 1px solid green; */
+  width: 46%;
+  height: 77vh;
   padding: 0;
-  /* background-color: #000; */
 }
 
 .pop-nav{
-  border: 1px solid #000;
-  height: 30px;
+  /* border: 1px solid #fff; */
+  height: 40px;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   background-color: #000;
 }
 
 .pop-nav p{
   color: #fff;
+  /* border: 1px solid #059ced; */
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 70%;
+  height: 100%;
+  font-family: "myriad-pro regular", sans-serif;
+  font-size: 8px;
+  font-weight: 100;
+  padding: 5px;
+}
+
+.pop-nav-icons{
+  /* border: 1px solid #fff; */
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 30%;
+  height: 100%;
+  padding: 5px;
+}
+
+.pop-nav-icons svg{
+  height: 45%;
+  width: 10%;
+  fill: #ccc;
+  text-align: left;
+}
+
+.pop-nav-icons svg:hover{
+  cursor: pointer;
+}
+
+
+.pop-nav button{
+  background-color: #000;
+  color: #ccc;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  justify-content: end;
+  /* padding-left: 20px; */
 }
 
 .popup-section{
@@ -367,7 +458,7 @@ justify-content: start;
 }
 
 .popup-content{
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   height: auto;
   width: 100%;
 }
@@ -376,7 +467,7 @@ justify-content: start;
   border-radius: 20px;
   width: 100%;
   height: 30px;
-  padding: 5px;
+  padding: 10px;
   margin: 5px 0;
   font-size: 10px;
   background-color: #000;
@@ -435,16 +526,17 @@ justify-content: start;
   border: none;
 }
 
+
 /* this is for the tanle in the pop up */
 table {
   width: 100%;
   border-collapse: collapse;
-  border: 1px solid #ccc;
+  border: 1px solid #edeaea;
   margin-top: 10px;
 }
 th{
 
-  border: 1px solid #999;
+  border: 1px solid #ccc;
   border-bottom: none;
 }
 
@@ -470,7 +562,7 @@ body::before {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 80%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 999;
 }
@@ -485,17 +577,17 @@ body.popup-active::before {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  /* height: 100%; */
   background-color: rgba(0, 0, 0, 0.8); /* Dark background with slight transparency */
   z-index: 1000;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 20px;
+  /* padding: 20px; */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow */
-  overflow-y: auto; /* Enable scrolling for long content */
+  overflow-y: auto;
 }
 
 .fullscreen-popup .pop-nav {
@@ -509,8 +601,8 @@ body.popup-active::before {
   border-bottom: 2px solid #ccc; /* Border to separate */
   position: sticky;
   top: 0;
-  z-index: 1001;
-  font-size: 1.5rem;
+  z-index: 100;
+  /* font-size: 1.5rem; */
   height: 100vh;
 }
 

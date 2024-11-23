@@ -20,6 +20,21 @@
    }
  });
 
+ //this is for the window icon on navbar
+ const windowButton = document.querySelector(".window");
+ const windowPopup = document.querySelector(".window-popup");
+  
+  windowButton.addEventListener("click", () => {
+    windowPopup.style.display = windowPopup.style.display === "block" ? "none" : "block";
+  });
+
+  //close the popup
+  document.addEventListener('click', (event) => {
+    if (!windowButton.contains(event.target) && !windowPopup.contains(event.target)) {
+      windowPopup.style.display = 'none';
+    }
+  });
+
  //this is for the 3 dotted menu next to initials
  const menuButton = document.querySelector('.menu-button');
 const menuPopup = document.querySelector('.menu-popup');
