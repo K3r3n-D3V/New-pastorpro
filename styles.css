@@ -92,7 +92,7 @@ justify-content: start;
   .window-popup {
   position: absolute;
   border: 1px solid #000;
-  top: 12%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
@@ -102,14 +102,89 @@ justify-content: start;
   z-index: 1000; 
   display: none; 
   color: #000;
+  width: 20%;
+  height: 57%;
 }
 
 .window-nav{
   border: 1px solid #000;
-  width: 80%;
+  background-color: #000;
+  width: 100%;
   height: 100%;
-  padding: 20px;
+  padding: 2px;
 }
+
+.login-heading{
+  border: 1px solid #fff;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.login-p{
+  border: 1px solid #fff;
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.login-heading p{
+  color: blue;
+  font-weight: bold;
+}
+
+.login-heading i{
+  color: #fff;
+  display: flex;
+  justify-content: end;
+}
+
+.login-i{
+  border: 1px solid #fff;
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-tab{
+  border: 1px solid #fff;
+  height: 70px;
+  width: 100%;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
   .profile{
     /* border: 1px solid #fff; */
     width: 20%;
@@ -281,7 +356,7 @@ justify-content: start;
 #box{
     height: 100px;
     width: 100%;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -356,12 +431,12 @@ justify-content: start;
 .events{
     /* border: 1px solid #000; */
     width: 100%;
-    height: 50vh;
+    height: 80vh;
     background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 2px;
+    padding:2px 2px;
 }
 
 .events img{
@@ -564,7 +639,7 @@ body::before {
   top: 0;
   left: 0;
   width: 100%;
-  height: 80%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 999;
 }
